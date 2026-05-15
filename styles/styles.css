@@ -101,7 +101,8 @@ p {
 }
 
 .section-image,
-.image-wrapper video {
+.image-wrapper video, 
+.image-wrapper img {
     max-width: 100%;
     height: auto;
     border-radius: 20px;
@@ -153,7 +154,55 @@ p {
     cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 1px 1px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 1px 0 0 1px;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@media screen and (max-width: 1024px) {
 
     .text {
         font-size: 5em;
@@ -188,14 +237,15 @@ p {
 
     #part1, 
     #part2, 
-    #part3 {
+    #part3,
+    #part4 {
         font-size: .75em;
     }
 
     #part2 .image-wrapper {
         order: 1;
-        width: 100vw;
-        max-width: 100vw;
+        width: 100%;
+        max-width: 100%;
     }
 
     #part2 .text-rectangle {
@@ -204,16 +254,28 @@ p {
 
     #part3 .image-wrapper {
         order: 1;
-        width: 100vw;
-        max-width: 100vw;
+        width: 100%;
+        max-width: 100%;
     }
 
     #part3 .text-rectangle {
         order: 2;
     }
 
+    #part4 .image-wrapper {
+        order: 1;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #part4 .text-rectangle {
+        order: 2;
+    }
+
     #part2 video,
-    #part3 video {
+    #part3 video,
+    #part4 video,
+    #part2 img {
         display: block;
         width: 100%;
         height: auto;
@@ -226,7 +288,7 @@ p {
         color: #820882;
     }
 
-    img {
+    #self {
         display: none;
     }
 
