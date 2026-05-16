@@ -93,6 +93,9 @@ p {
     flex: 1;
     display: flex;
     justify-content: center;
+    border: none;
+    box-shadow: none;
+    outline: none;
 }
 
 .section-image {
