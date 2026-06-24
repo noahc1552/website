@@ -137,13 +137,6 @@ p {
     object-fit: cover;
 }
 
-#all-links a {
-    text-decoration: none;
-    font-size: 4.25em;
-    color: #820882;
-    font-weight: 500;
-}
-
 #links-view {
     display:none;
 }
@@ -265,8 +258,7 @@ p {
         display: none;
     }
 
-    #names, 
-    #all-links {
+    #names {
         font-size: .5em;
     }
 
